@@ -1,0 +1,107 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MyName</servlet-name>
+        <servlet-class>MyName</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyName</servlet-name>
+        <url-pattern>/myname</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Counter</servlet-name>
+        <servlet-class>Counter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Counter</servlet-name>
+        <url-pattern>/counter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>request_recv</servlet-name>
+        <servlet-class>RequestRecv</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>request_recv</servlet-name>
+        <url-pattern>/receive</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>teacher_servlet</servlet-name>
+        <servlet-class>TeacherServ</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>teacher_servlet</servlet-name>
+        <url-pattern>/teacherServ</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>teacher_name</servlet-name>
+        <servlet-class>teacherServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>teacher_servlet</servlet-name>
+        <url-pattern>/teacherServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>time</servlet-name>
+        <jsp-file>/CurrentTime.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>time</servlet-name>
+        <url-pattern>/CurrentTime</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>inputtest</servlet-name>
+        <jsp-file>/input.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>inputtest</servlet-name>
+        <url-pattern>/inputtest</url-pattern>
+    </servlet-mapping>
+
+    <!-- /registtest → RegistTestServlet -->
+    <servlet>
+        <servlet-name>registtest</servlet-name>
+        <servlet-class>RegistTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registtest</servlet-name>
+        <url-pattern>/registtest</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registresult</servlet-name>
+        <jsp-file>/registresult.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>registresult</servlet-name>
+    <url-pattern>/registresult</url-pattern>
+    </servlet-mapping>    
+
+
+</web-app>
